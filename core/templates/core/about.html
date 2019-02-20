@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">  
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/myAvatar.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Ricardo César Carranza</h2>   
+        <p>Desarrollador de Software, entusiasta de la investigación de nuevas tecnologías, comprometido con el desarrollo web, con 6 años trabajando en este maravilloso mundo del desarrollo de software.</p>
+        <p>Tres años conociendo y practicando de cerca el desarrollo web y otras tecnologías con Python y Django, las Progressive Web Apps en dispositivos moviles y más ...</p>
+    </div>
+</div>
+{% endblock %}
